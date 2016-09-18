@@ -4,7 +4,7 @@
 int parse_commandline( const char * const str,
                        char * const tmp,
                        const size_t tmp_size,
-                       size_t * const argc,
+                       int * const argc,
                        const char *** const argv ) {
     const int32_t state_quote = 1 << 0;
     const int32_t state_text  = 1 << 1;

@@ -24,5 +24,5 @@
 int parse_commandline( const char * const str,
                        char * const tmp,
                        const size_t tmp_size,
-                       size_t * const argc,
+                       int * const argc,
                        const char *** const argv );
