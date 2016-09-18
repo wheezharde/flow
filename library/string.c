@@ -11,7 +11,7 @@ int parse_commandline( const char * const str,
     const int32_t state_space = 1 << 2;
     const size_t  align_mask  = sizeof( void * ) - 1;
     const size_t  str_length  = strlen( str );
-    const uintptr_t tmp_end = tmp + tmp_size;
+    const uintptr_t tmp_end = ( uintptr_t )tmp + tmp_size;
 
     char * tmp_cur = tmp;
     int32_t state = state_space;
